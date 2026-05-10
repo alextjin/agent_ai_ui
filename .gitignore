@@ -3,6 +3,9 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Local Codex workspace metadata
+.codex/
+
 # C extensions
 *.so
 

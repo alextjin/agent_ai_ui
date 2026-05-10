@@ -1,50 +1,45 @@
-# GTA Greal Deals AI Agent (Frontend)
+# AI Chat Frontend
 
-## Background
+## Overview
 
-This repository serves the frontend UI of the AI agent project.
+Minimal Streamlit frontend for an AI chat interface. The app is frontend-only:
+it manages chat UI state, renders messages, and previews streaming assistant
+responses without implementing provider or backend logic.
 
-## Set up
+## Structure
 
-### Python Version
+- `app.py` - entry point only
+- `src/ui` - Streamlit rendering components
+- `src/models` - shared data models
+- `src/utils` - session state helpers
+
+## Setup
 
 Python 3.12.8 is used in this project.
 
-### Python Package Manager
-
-uv is used for the package manager given its robustness and performance.
-
-Make sure you have uv installed in your environment.
+Install `uv` if needed:
 
 ```bash
 pip install uv
 ```
 
-### Python Virtual Environement
-
-It is always a best practice to create a virtual environment for running a Python project instead of the global python environment.
-
-Make sure you create and activate the project virtual environment.
+Create and activate the virtual environment:
 
 ```bash
 uv venv ./venv
 source ./venv/Scripts/activate
 ```
 
-### Project Dependency
-
-Install required dependencies
+Install dependencies:
 
 ```bash
 uv pip install -r requirements.txt
 ```
 
-### Run Application
-
-Simply run the `.run.sh` shell script in your terminal to host the application.
+Run the app:
 
 ```bash
 ./run.sh
 ```
 
-You should be able to access the application locally on specific port.
+The app will be available on the local Streamlit URL shown in the terminal.
